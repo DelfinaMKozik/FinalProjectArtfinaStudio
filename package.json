@@ -11,11 +11,10 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
+  }, "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "start": "react-scripts start" ,
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -40,5 +39,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  }
+  },
+  "description": "ArtFinaStudio - is an ecommerce website. Specializing with sales of the hand painted and \"painted-look\" prints denim jackets.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

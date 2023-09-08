@@ -1,3 +1,4 @@
+@use 'sass:color';
 @import "header";
 @import "carusell";
 @import "banner";
@@ -5,3 +6,17 @@
 @import "discountForm";
 @import "sustainableSection";
 @import "footer";
+
+html {
+  //font-size: 14px;
+  //font-family: $font-Open_Sans;
+}
+
+body {
+  background-color: $white-background;
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
