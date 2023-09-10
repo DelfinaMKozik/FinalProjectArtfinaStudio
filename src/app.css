@@ -1,4 +1,19 @@
+@import "./styles/components/Footer.scss";
+@import "./styles/components/ShopItem.scss";
+@import "./styles/components/NavBar.scss";
+@import "./styles/elements/About.scss";
+@import "./styles/elements/Contact.scss";
+@import "./styles/elements/Gallery.scss";
+@import "./styles/elements/Home.scss";
+@import "./styles/elements/Shop.scss";
+@import "styles/settings/Reset.scss";
+@import "styles/settings/Variables.scss";
+@import "styles/settings/Fonts.scss";
+
+
+
 .App {
+  text-align: center;
   width: 100%;
   height: auto;
   display: flex;
@@ -9,4 +24,10 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  /*margin-left: 3rem;*/
+  /*margin-right: 3rem;*/
 }

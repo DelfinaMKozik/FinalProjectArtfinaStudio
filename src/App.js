@@ -15,7 +15,7 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 function App() {
     return (
         <div className="App">
-            <div>hehehe</div>
+            <Navbar/>
             <Router>
                 <Routes>
                     <Route path="/home" element={<Home/>}/>
@@ -25,8 +25,6 @@ function App() {
 
                 </Routes>
             </Router>
-            <Navbar/>
-
         </div>
     );
 }
