@@ -15,7 +15,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4",
     "webpack": "4.28.3"
@@ -47,7 +47,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "description": "ArtFinaStudio - is an ecommerce website. Specializing with sales of the hand painted and \"painted-look\" prints denim jackets.",
   "main": "index.js",

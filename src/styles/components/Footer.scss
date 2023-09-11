@@ -1,0 +1,53 @@
+@import "../settings/Variables.scss";
+@import "../settings/Fonts.scss";
+
+
+.footer {
+  margin-right: 3rem;
+  margin-left: 3rem;
+  border-bottom: 1.4px solid $greyish;
+  border-top:1.4px solid $greyish;
+  width: 100vw;
+
+  .contact_section {
+    display: flex;
+    //justify-content: space-between;
+    height: 15rem;
+
+    .contact_section_el_line {
+      border-right: 1.5px solid black;
+    }
+
+    .contact_section_el {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+
+  .footer_title {
+    font-family: $head-font;
+    font-size: 2rem;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+  }
+
+  .footer_element {
+    font-family: $head-font;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+  }
+
+  .footer_bottomSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top:1.4px solid $greyish;
+    padding: 1rem 0.2rem 1rem 0.2rem;
+
+    .socialMedia_el {
+      padding-left: 0.5rem;
+    }
+  }
+}
