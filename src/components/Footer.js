@@ -12,7 +12,7 @@ function Footer() {
             <div className="contact_section">
                 <div className="contact_section_el contact_section_el_line">
                     <h2 className="footer_title">Get In Touch</h2>
-                    <p className="footer_element">Email us</p>
+                    <p className="footer_element"><a href="mailto:artfinastudio@gmail.com">Email us</a></p>
                     <p className="footer_element">+44 (0) 7856 387698</p>
                 </div>
                 <div className="contact_section_el">
