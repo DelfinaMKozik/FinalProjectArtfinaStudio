@@ -1,8 +1,13 @@
 import React from 'react';
+import ComingSoon from "../components/ComingSoon";
+import "../styles/elements/Home.scss"
+
 
 function Home() {
     return (
-        <div>Hello you</div>
+        <div className="home_page">
+            <ComingSoon/>
+        </div>
     );
 }
 

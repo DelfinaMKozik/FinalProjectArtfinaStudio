@@ -1,9 +1,11 @@
 import React from 'react';
+import ComingSoon from "../components/ComingSoon";
+import "../styles/elements/About.scss"
 
 function About() {
     return (
-        <div>
-            <h1>About</h1>
+        <div className="about_page">
+            <ComingSoon/>
         </div>
     );
 }

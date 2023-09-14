@@ -1,8 +1,12 @@
 import React from 'react';
+import ComingSoon from "./ComingSoon";
+
 
 function LogIn() {
     return (
-        <div>Log In !!!</div>
+        <div>
+            <ComingSoon/>
+        </div>
     );
 }
 

@@ -1,9 +1,10 @@
 import React from 'react';
+import ComingSoon from "../components/ComingSoon";
 
 function Gallery() {
     return (
-        <div>
-            <h1>Gallery</h1>
+        <div className="gallery_page">
+            <ComingSoon/>
         </div>
     );
 }

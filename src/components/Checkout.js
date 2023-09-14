@@ -1,8 +1,13 @@
 import React from 'react';
+import ComingSoon from "./ComingSoon";
+
 
 function Checkout() {
     return (
-        <div>Checkout</div>
+        <div className="checkout_page">
+            <h1>Checkout</h1>
+            <ComingSoon/>
+        </div>
     );
 }
 

@@ -1,9 +1,11 @@
 import React from 'react';
+import ComingSoon from "../components/ComingSoon";
+import "../styles/elements/Contact.scss"
 
 function Contact() {
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className="contact_page">
+            <ComingSoon/>
         </div>
     );
 }
