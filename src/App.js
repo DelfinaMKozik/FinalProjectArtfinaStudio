@@ -11,6 +11,7 @@ import NotFound from "./pages/NotFound";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Checkout from "./components/Checkout";
 import LogIn from "./components/LogIn";
+import Layout from "./components/Layout";
 
 // import {
 //     HashRouter,
@@ -31,13 +32,21 @@ function App() {
             <Router>
                 <Navbar/>
                     <Routes>
+                        {/*<Route element={<Layout/>}>*/}
+                        {/*    <Route path="/" element={<Home />}/>*/}
+                        {/*    <Route path="about" element={<About />}/>*/}
+                        {/*    <Route path="gallery" element={<Gallery />}/>*/}
+                        {/*    <Route path="shop" element={<Shop />}/>*/}
+                        {/*    <Route path="/logIn" element={<LogIn/>}/>*/}
+                        {/*    <Route path="/checkout" element={<Checkout/>}/>*/}
+                        {/*</Route>*/}
                         <Route path="/" element={<Home />}/>
                         <Route path="about" element={<About />}/>
                         <Route path="gallery" element={<Gallery />}/>
                         <Route path="shop" element={<Shop />}/>
-                        <Route path="*" element={<NotFound />} />
-                        <Route path="/checkout" element={<Checkout/>}/>
                         <Route path="/logIn" element={<LogIn/>}/>
+                        <Route path="/checkout" element={<Checkout/>}/>
+                        <Route path="*" element={<NotFound />} />
                     </Routes>
                 <Footer/>
             </Router>
