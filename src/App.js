@@ -9,9 +9,10 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery"
 import NotFound from "./pages/NotFound";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import Checkout from "./components/Checkout";
+import Checkout from "./pages/Checkout";
 import LogIn from "./components/LogIn";
 import Layout from "./components/Layout";
+import {ShopContextProvider} from "./context/Shop-context";
 
 // import {
 //     HashRouter,
@@ -28,28 +29,29 @@ import Layout from "./components/Layout";
 function App() {
     return (
         <div className="App">
-
-            <Router>
-                <Navbar/>
-                    <Routes>
-                        {/*<Route element={<Layout/>}>*/}
-                        {/*    <Route path="/" element={<Home />}/>*/}
-                        {/*    <Route path="about" element={<About />}/>*/}
-                        {/*    <Route path="gallery" element={<Gallery />}/>*/}
-                        {/*    <Route path="shop" element={<Shop />}/>*/}
-                        {/*    <Route path="/logIn" element={<LogIn/>}/>*/}
-                        {/*    <Route path="/checkout" element={<Checkout/>}/>*/}
-                        {/*</Route>*/}
-                        <Route path="/" element={<Home />}/>
-                        <Route path="about" element={<About />}/>
-                        <Route path="gallery" element={<Gallery />}/>
-                        <Route path="shop" element={<Shop />}/>
-                        <Route path="/logIn" element={<LogIn/>}/>
-                        <Route path="/checkout" element={<Checkout/>}/>
-                        <Route path="*" element={<NotFound />} />
-                    </Routes>
-                <Footer/>
-            </Router>
+            <ShopContextProvider>
+                <Router>
+                    <Navbar/>
+                        <Routes>
+                            {/*<Route element={<Layout/>}>*/}
+                            {/*    <Route path="/" element={<Home />}/>*/}
+                            {/*    <Route path="about" element={<About />}/>*/}
+                            {/*    <Route path="gallery" element={<Gallery />}/>*/}
+                            {/*    <Route path="shop" element={<Shop />}/>*/}
+                            {/*    <Route path="/logIn" element={<LogIn/>}/>*/}
+                            {/*    <Route path="/checkout" element={<Checkout/>}/>*/}
+                            {/*</Route>*/}
+                            <Route path="/" element={<Home />}/>
+                            <Route path="about" element={<About />}/>
+                            <Route path="gallery" element={<Gallery />}/>
+                            <Route path="shop" element={<Shop />}/>
+                            <Route path="/logIn" element={<LogIn/>}/>
+                            <Route path="/checkout" element={<Checkout/>}/>
+                            <Route path="*" element={<NotFound />} />
+                        </Routes>
+                    <Footer/>
+                </Router>
+            </ShopContextProvider>
             {/*<Footer/>*/}
         </div>
     );

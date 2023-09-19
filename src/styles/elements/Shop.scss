@@ -63,7 +63,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
-    height: 230px;
+    height: 200px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,6 +83,24 @@
     //color: white;
 
 
+  }
+
+  .addToCartBtn {
+    //position: absolute;
+    background-color: inherit;
+    border: 2px solid white;
+    color: white;
+    //height: 4rem;
+    //width: 8rem;
+    //font-size: 1.1rem;
+    font-family: $head-font;
+    margin-top: 0.3rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $earthy-color;
+    }
   }
 
 }

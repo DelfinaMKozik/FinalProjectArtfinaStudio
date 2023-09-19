@@ -10,10 +10,12 @@ function Shop() {
             <div className="products_list">{ProductsList.map((product, key) => {
                 return (
                     <ShopItem
-                        key={key}
-                        image={product.image}
-                        name={product.name}
-                        price={product.price}/>)
+                        data={product}
+                        // key={key}
+                        // image={product.image}
+                        // name={product.name}
+                        // price={product.price}
+                    />)
             })}</div>
         </div>
     );
