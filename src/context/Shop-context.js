@@ -13,6 +13,19 @@ const getDefaultBag = () => {
 export const ShopContextProvider = (props) => {
     const [bagItems, setBagItems] = useState(getDefaultBag());
 
+    const getTotalBagAmount = () => {
+        let totalAmount = 0;
+
+        for(const item in bagItems){
+            if(bagItems[item] > 0 ) {
+                let itemInfo = ProductsList.find((product)=> product.id === Number(item))
+                totalAmount += bagItems[item] * itemInfo.price
+            }
+        }
+
+        return totalAmount;
+    }
+
     const addToBag = (itemId) => {
         setBagItems((prev) => ({...prev, [itemId] : prev[itemId] + 1 }))
     }
@@ -25,7 +38,7 @@ export const ShopContextProvider = (props) => {
         setBagItems((prev) => ({...prev, [itemId]: newAmount}))
     }
 
-    const contextValue = {bagItems, addToBag, removeFromBag, updateBagItemCount}
+    const contextValue = {bagItems, addToBag, removeFromBag, updateBagItemCount, getTotalBagAmount}
 
     return <ShopContext.Provider value={contextValue}>{props.children}</ShopContext.Provider>;
 }

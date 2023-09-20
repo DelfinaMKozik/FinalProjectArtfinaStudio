@@ -32,6 +32,30 @@
     flex-direction: column;
 
   }
+
+  .total_checkout {
+    margin-bottom: 2rem;
+
+    .total_checkout_subtotal {
+      font-family: $head-font;
+      font-size: 1.6rem;
+      padding: 1rem 0.2rem 1rem 0.2rem;
+
+    }
+
+    button {
+      color: black;
+      font-family: $head-font;
+      padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+      font-weight: 600;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+      margin: 0.3rem;
+
+      &:hover {
+        background-color: $bluish-accent-lighter;
+      }
+    }
+  }
 }
 
 .bagItem {
@@ -117,5 +141,5 @@
       }
     }
 
-      }
+  }
 }

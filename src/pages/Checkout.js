@@ -6,8 +6,8 @@ import BagItem from "../components/BagItem";
 import "../styles/elements/Checkout.scss";
 
 function Checkout() {
-    const {bagItems} = useContext(ShopContext);
-
+    const {bagItems,getTotalBagAmount } = useContext(ShopContext);
+    const totalAmount = getTotalBagAmount();
 
     return (
         <div className="checkout_page">
@@ -20,6 +20,11 @@ function Checkout() {
                         return <BagItem data={product}/>
                     }
                 })}
+            </div>
+            <div className="total_checkout">
+                <p className="total_checkout_subtotal">Subtotal: £ {totalAmount}</p>
+                <button>Continue Shopping</button>
+                <button>Checkout</button>
             </div>
         </div>
     );
