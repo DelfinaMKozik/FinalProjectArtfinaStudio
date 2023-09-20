@@ -20,7 +20,7 @@ function Checkout() {
             <div className="bag_items">
                 {ProductsList.map((product) => {
                     if(bagItems[product.id] !== 0) {
-                        return <BagItem data={product}/>
+                        return <BagItem data={product} />
                     }
                 })}
             </div>
