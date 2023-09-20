@@ -73,7 +73,7 @@ export const ProductsList = [
         price: 90,
     },
     {
-        id: 12,
+        id: 11,
         name: "Behind Camera",
         image: behindCamera,
         price: 105,
