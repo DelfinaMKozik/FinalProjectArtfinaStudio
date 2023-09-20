@@ -56,6 +56,17 @@
       }
     }
   }
+
+  .empty_bag {
+    font-family: $head-font;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    background-color: $bluish-accent-lighter;
+    margin: 4rem;
+    border-radius: 15px;
+  }
 }
 
 .bagItem {

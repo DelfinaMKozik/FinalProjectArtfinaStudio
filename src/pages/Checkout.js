@@ -4,10 +4,13 @@ import {ShopContext} from "../context/Shop-context";
 // import ShopItem from "../components/ShopItem";
 import BagItem from "../components/BagItem";
 import "../styles/elements/Checkout.scss";
+import {useNavigate} from "react-router-dom"
 
 function Checkout() {
     const {bagItems,getTotalBagAmount } = useContext(ShopContext);
     const totalAmount = getTotalBagAmount();
+
+    const navigate = useNavigate();
 
     return (
         <div className="checkout_page">
@@ -21,11 +24,13 @@ function Checkout() {
                     }
                 })}
             </div>
+            {totalAmount > 0 ?
             <div className="total_checkout">
                 <p className="total_checkout_subtotal">Subtotal: £ {totalAmount}</p>
-                <button>Continue Shopping</button>
+                <button onClick={() => navigate("/shop")}>Continue Shopping</button>
                 <button>Checkout</button>
             </div>
+            : <h1 className="empty_bag">Your bag is empty ;( </h1>}
         </div>
     );
 }
