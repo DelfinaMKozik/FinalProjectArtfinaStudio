@@ -10,19 +10,10 @@ import Gallery from "./pages/Gallery"
 import NotFound from "./pages/NotFound";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import Checkout from "./pages/Checkout";
-import LogIn from "./components/LogIn";
+import LogIn from "./pages/LogIn";
+import Registration from "./pages/Registration";
 import Layout from "./components/Layout";
 import {ShopContextProvider} from "./context/Shop-context";
-
-// import {
-//     HashRouter,
-//     Route,
-//     Routes,
-//     // Link,
-//     // NavLink,
-//     // Outlet
-// } from 'react-router-dom';
-
 
 
 
@@ -47,7 +38,8 @@ function App() {
                             <Route path="shop" element={<Shop />}/>
                             <Route path="/logIn" element={<LogIn/>}/>
                             <Route path="/checkout" element={<Checkout/>}/>
-                            <Route path="*" element={<NotFound />} />
+                            <Route path="/registration" element={<Registration/>}/>
+                            {/*<Route path="*" element={<NotFound />} />*/}
                         </Routes>
                     <Footer/>
                 </Router>
