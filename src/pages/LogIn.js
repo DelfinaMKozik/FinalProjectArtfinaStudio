@@ -13,6 +13,7 @@ function LogIn() {
         email: "",
         password: ""
     })
+    // const [validation, setValidation] = useState("");
 
     const handleChange = ({ target: {name,value}}) => {
         setValues(prev => ({
@@ -25,13 +26,11 @@ function LogIn() {
         const auth = getAuth(app);
         const {email, password} = values;
 
+
         signInWithEmailAndPassword(auth, email, password)
             .then( () => {
                 navigate("/")
-                // (userCredential) => {
-                // // Signed in
-                // const user = userCredential.user;
-                // // ...
+
 
             })
             .catch((error) => {
@@ -47,6 +46,7 @@ function LogIn() {
             <div className="input_box">
                 <input className="input_styles" name="email" value={values.email} onChange={handleChange} placeholder="Email"/>
                 <input className="input_styles" type="password" name="password" value={values.password} onChange={handleChange} placeholder="Password"/>
+
             </div>
             <button className="logIn_btn" onClick={handleAdd}>Log In</button>
             <Link to="/signUp"><button className="createAccount_btn">Create account</button></Link>
