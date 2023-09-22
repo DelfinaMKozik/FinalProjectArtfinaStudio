@@ -1,0 +1,81 @@
+@import "../settings/Variables.scss";
+@import "../settings/Fonts.scss";
+
+.logIn_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 3rem;
+  margin-left: 3rem;
+
+
+  .login_title {
+    background-color: $earthy-color;
+    color: white;
+    width: 100%;
+    height: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $head-font;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .input_box {
+    padding: 3rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+
+
+    .input_styles {
+      width: 22rem;
+      height: 3.5rem;
+      //font-family: $head-font;
+      //font-size: 1rem;
+      padding-left: 1rem;
+
+      &:hover {
+        border: 2px solid $bluish-accent-lighter;
+      }
+    }
+  }
+
+  .logIn_btn {
+    font-family: $head-font;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: inherit;
+    border: 1px solid $greyish;
+    margin-bottom: 1rem;
+
+
+    &:hover {
+      background-color: $bluish-accent-lighter;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    }
+
+  }
+
+  .createAccount_btn {
+    border:none;
+    color: #212020;
+    width: 6.5rem;
+    border-bottom: 1px solid #212020;
+    background-color: inherit;
+    margin-bottom: 3rem;
+    font-family: $head-font;
+
+    &:hover {
+      border-bottom:2px solid #212020 ;
+    }
+
+  }
+}

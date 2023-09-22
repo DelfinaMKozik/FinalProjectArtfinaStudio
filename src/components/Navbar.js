@@ -1,15 +1,30 @@
-import React, {useState} from "react";
-import {Link} from "react-router-dom"
+import React, {useContext, useState} from "react";
+import {Link, useNavigate} from "react-router-dom"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-regular-svg-icons';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import "../styles/components/NavBar.scss"
+import {ShopContextProvider} from "../context/Shop-context";
+import { getAuth, signOut } from "firebase/auth";
 
 
 
 export default function Navbar() {
     const [openLinks, setOpenLinks] = useState(false);
+    const navigate = useNavigate();
+
+    const user = useContext(ShopContextProvider);
+
+    const handleLogout = () => {
+        const auth = getAuth();
+        signOut(auth).then(() => {
+           navigate("/logIn")
+        }).catch((error) => {
+            // An error happened.
+        });
+
+    }
 
     const toggleNavbar = () => {
         setOpenLinks(!openLinks)
@@ -41,6 +56,9 @@ export default function Navbar() {
                     </div>
                     <div className="card icons">
                         <Link to="/checkout"><FontAwesomeIcon icon={faBagShopping} style={{color: "#000000", width: "20px", height: "20px"}} /></Link>
+                    </div>
+                    <div className="card icons">
+                        <FontAwesomeIcon icon={faArrowRightFromBracket} onClick={handleLogout} style={{color: "#000000", width: "20px", height: "20px", cursor: "pointer"}} />
                     </div>
                 </div>
             </div>

@@ -29,8 +29,8 @@ function Footer() {
                         <FontAwesomeIcon icon={faCopyright} style={{color: "#000000",}} />2023 ArtFinaStudio
                     </div>
                     <div className="icons_socialMedia">
-                        <a href="https://www.instagram.com/artfinastudio/?fbclid=IwAR05NqdueVSdRNMxCysvyZJXyQtjZcuJqqL9Ij3GWzw5T4zCTXQ3Y2LuAOg"> <FontAwesomeIcon icon={faInstagram} style={{color: "#bf1da9",width: "25px", height:"25px"}} className="socialMedia_el" /></a>
-                        <a href="https://www.facebook.com/artfinastudio/"> <FontAwesomeIcon icon={faFacebook} style={{color: "#177fcf",width: "25px", height:"25px"}} className="socialMedia_el"/></a>
+                        <a href="https://www.instagram.com/artfinastudio/?fbclid=IwAR05NqdueVSdRNMxCysvyZJXyQtjZcuJqqL9Ij3GWzw5T4zCTXQ3Y2LuAOg"><FontAwesomeIcon icon={faInstagram} style={{color: "#bf1da9",width: "25px", height:"25px"}} className="socialMedia_el" /></a>
+                        <a href="https://www.facebook.com/artfinastudio/"><FontAwesomeIcon icon={faFacebook} style={{color: "#177fcf",width: "25px", height:"25px"}} className="socialMedia_el"/></a>
                         <a href="https://www.pinterest.co.uk/delfina1229/"><FontAwesomeIcon icon={faPinterest} style={{color: "#c12525",width: "25px", height:"25px"}} className="socialMedia_el"/></a>
         </div>
                 </div>

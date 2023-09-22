@@ -26,7 +26,7 @@ function Checkout() {
             </div>
             {totalAmount > 0 ?
             <div className="total_checkout">
-                <p className="total_checkout_subtotal">Subtotal: £ {totalAmount}</p>
+                <p className="total_checkout_subtotal">Subtotal: £{totalAmount}</p>
                 <button onClick={() => navigate("/shop")}>Continue Shopping</button>
                 <button>Checkout</button>
             </div>
